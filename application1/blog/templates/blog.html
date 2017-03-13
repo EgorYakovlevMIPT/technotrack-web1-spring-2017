@@ -1,0 +1,12 @@
+
+{% extends "news/base.html" %}
+
+{% block title %}Список блогов: {% endblock %}
+
+{% block content %}
+    {% for blog in object_list %}
+        <div>
+            <div>{{ blog.title }}</div>
+        </div>
+    {% endfor %}
+{% endblock %}

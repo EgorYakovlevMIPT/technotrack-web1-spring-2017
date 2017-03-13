@@ -1,0 +1,12 @@
+  {% extends "news/base.html" %}
+
+  {% block title %}Профиль пользователя{% endblock %}
+
+  {% block content %}
+      <img src="{object.image}"> </img>
+
+    {{ object.title }}<br>
+
+    {%  url "modle_details" pk=object.pk %}
+
+  {% endblock %}

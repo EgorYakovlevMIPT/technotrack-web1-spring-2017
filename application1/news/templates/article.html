@@ -1,0 +1,13 @@
+  {% extends "news/base.html" %}
+
+  {% block title %}{{ object.title }}{% endblock %}
+
+  {% block content %}
+
+    {{ object.title }}<br>
+    {{ object.text }}<br>
+    {{ object.pub_date|date:"Y-m-d" }}<br>
+
+    {%  url "news_details" pk=object.pk %}
+
+  {% endblock %}

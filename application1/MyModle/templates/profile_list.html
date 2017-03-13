@@ -1,0 +1,11 @@
+{% extends "news/base.html" %}
+
+{% block title %}Список пользователей{% endblock %}
+
+{% block content %}
+    {% for profile in profile_list %}
+        <div>
+            <div><a href="/profile/{{profile.pk}}">{{ profile.title }}</a></div>
+        </div>
+    {% endfor %}
+{% endblock %}

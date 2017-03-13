@@ -1,0 +1,12 @@
+<html>
+<head>
+
+</head>
+<body>
+    {{ object.title }}<br>
+    {{ object.text }}<br>
+    {{ object.pub_date|date:"Y-m-d" }}<br>
+
+    {%  url "remark_details" pk=object.pk %}
+</body>
+</html>

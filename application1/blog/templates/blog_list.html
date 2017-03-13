@@ -1,0 +1,11 @@
+{% extends "news/base.html" %}
+
+{% block title %}Список блогов{% endblock %}
+
+{% block content %}
+    {% for blog in blog_list %}
+        <div>
+            <div><a href="/news/{{blog.pk}}">{{ blog.title }}</a></div>
+        </div>
+    {% endfor %}
+{% endblock %}
